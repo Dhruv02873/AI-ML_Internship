@@ -46,8 +46,8 @@ Fare is highly positively skewed.
 Age has a slight positive skew.
 
 ## Files Included
-`main.py` – The main Python script for this task
-`Output/` – A folder containing all the plots generated during EDA
+- `main.py` – The main Python script for this task
+- `Output/` – A folder containing all the plots generated during EDA
 
 
 ## How to Run This Project
