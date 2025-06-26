@@ -68,6 +68,7 @@ File used: Housing.csv
 3. Run the script:
    ```bash
    python main.py
+   ```
 
 
 
