@@ -5,9 +5,9 @@ import seaborn as sns
 #STEP-1-Importing the dataset and Displaying basic information about the dataset
 df=pd.read_csv('Titanic-Dataset.csv')
 df.info()
-df.head()
+print(df.head())
 df.describe()
-df.isnull().sum()
+print(df.isnull().sum())
 #STEP-2-useing mode median or mean to fill the missing values and even drop a column if it has too many missing values(Such info was found above in the isnull() function)
 df['Age'].fillna(df['Age'].median(), inplace=True)
 df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
@@ -26,7 +26,3 @@ IQR = Q3 - Q1
 df = df[(df['Fare'] >= Q1 - 1.5 * IQR) & (df['Fare'] <= Q3 + 1.5 * IQR)]
 #STEP-6-Visualizing the cleaned data
 df.to_csv("cleaned_titanic.csv", index=False)
-
-
-
-
